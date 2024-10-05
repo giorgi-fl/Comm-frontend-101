@@ -17,7 +17,7 @@
           <div>
             <img src="./src/img/logo.svg" alt="logo" />
           </div>
-          <div class="flex align-center gap-40">
+          <div class="flex align-center gap-40 only_desktop">
             <ul class="flex gap-40">
               <li><a class="pXL" href="#">About us</a></li>
               <li><a class="pXL" href="#">Services</a></li>
@@ -27,49 +27,119 @@
             </ul>
             <button class="btn_secondary">Request a quote</button>
           </div>
+          <div class="only_mobile">
+            <div class="flex flex-col gap-4">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
+          </div>
         </div>
       </nav>
     </header>
     <section class="mt-70 container">
       <div class="flex justify-between align-center">
-        <div class="flex flex-col gap-40 w-50">
+        <div class="flex flex-col gap-40 w-50 sm-w-100">
           <h1 class="hXL font-semibold">
             Navigating the digital landscape <br />
             for success
           </h1>
+          <div class="w-40 sm-w-100 only_mobile">
+            <img src="./src/img/banner.svg" alt="banner image" />
+          </div>
           <p class="pXL font-light">
             Our digital marketing agency helps businesses grow and succeed
             online through a range of services including SEO, PPC, social media
             marketing, and content creation.
           </p>
-          <button class="btn_primary w-50">Book a consultation</button>
+          <button class="btn_primary w-50 sm-w-100">Book a consultation</button>
         </div>
-        <div class="w-40">
+        <div class="w-40 sm-w-100">
           <img src="./src/img/banner.svg" alt="banner image" />
         </div>
       </div>
     </section>
-    <section class="mt-70 container">
-      <div class="flex justify-between">
-        <img class="w-10 filtered" src="./src/img/amazon.svg" alt="feature1" />
-        <img class="w-10 filtered" src="./src/img/driblle.svg" alt="feature1" />
-        <img class="w-10 filtered" src="./src/img/hubspot.svg" alt="feature1" />
-        <img class="w-10 filtered" src="./src/img/notion.svg" alt="feature1" />
-        <img class="w-10 filtered" src="./src/img/netflix.svg" alt="feature1" />
-        <img class="w-10 filtered" src="./src/img/zoom.svg" alt="feature1" />
+    <section class="mt-70 container sm_no_contianer">
+      <div class="flex justify-between mobile_version only_desktop_flex">
+        <img
+          class="w-10 sm-w-30 filtered"
+          src="./src/img/amazon.svg"
+          alt="feature1"
+        />
+        <img
+          class="w-10 sm-w-30 filtered"
+          src="./src/img/driblle.svg"
+          alt="feature1"
+        />
+        <img
+          class="w-10 sm-w-30 filtered"
+          src="./src/img/hubspot.svg"
+          alt="feature1"
+        />
+        <img
+          class="w-10 sm-w-30 filtered"
+          src="./src/img/notion.svg"
+          alt="feature1"
+        />
+        <img
+          class="w-10 sm-w-30 filtered"
+          src="./src/img/netflix.svg"
+          alt="feature1"
+        />
+        <img
+          class="w-10 sm-w-30 filtered"
+          src="./src/img/zoom.svg"
+          alt="feature1"
+        />
+      </div>
+      <div class="flex justify-between mobile_version_1 only_mobile">
+        <img
+          class="w-10 sm-w-30 filtered"
+          src="./src/img/amazon.svg"
+          alt="feature1"
+        />
+        <img
+          class="w-10 sm-w-30 filtered"
+          src="./src/img/driblle.svg"
+          alt="feature1"
+        />
+        <img
+          class="w-10 sm-w-30 filtered"
+          src="./src/img/hubspot.svg"
+          alt="feature1"
+        />
+      </div>
+      <div class="flex justify-between mobile_version_2 only_mobile">
+        <img
+          class="w-10 sm-w-30 filtered"
+          src="./src/img/notion.svg"
+          alt="feature1"
+        />
+        <img
+          class="w-10 sm-w-30 filtered"
+          src="./src/img/netflix.svg"
+          alt="feature1"
+        />
+        <img
+          class="w-10 sm-w-30 filtered"
+          src="./src/img/zoom.svg"
+          alt="feature1"
+        />
       </div>
     </section>
     <section class="mt-140 container">
-      <div class="flex gap-40 align-center">
-        <h2 class="hL text_box font-semibold green">Services</h2>
-        <p class="pL font-light">
+      <div class="flex gap-40 align-center sm_jusitfy_center">
+        <h2 class="hL text_box font-semibold green sm_text_center">Services</h2>
+        <p class="pL font-light sm_text_center">
           At our digital marketing agency, we offer a range of services to
           <br />
           help businesses grow and succeed online. These services include:
         </p>
       </div>
       <div class="flex gap-40 align-center mt-60 flex-wrap">
-        <div class="bg-gray p-50 border border-rounded box-shadow w-500">
+        <div
+          class="bg-gray p-50 border border-rounded box-shadow w-500 only_desktop"
+        >
           <div class="flex justify-between align-center gap-40">
             <div class="flex flex-col gap-40">
               <div>
@@ -84,6 +154,24 @@
 
             <div>
               <img src="./src/img/serivces2.svg" class="w-212" alt="seo" />
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-gray p-50 border border-rounded box-shadow w-500 only_mobile"
+        >
+          <div class="flex justify-between align-center sm-w-100">
+            <div class="flex flex-col">
+              <div>
+                <h3 class="text_box green">Search engine</h3>
+                <h3 class="text_box green">optimization</h3>
+              </div>
+            </div>
+
+            <div class="flex justify-between align-end sm-w-100">
+              <img src="./src/img/learnMore.svg" class="icon" alt="seo" />
+
+              <img src="./src/img/serivces2.svg" class="w-165" alt="seo" />
             </div>
           </div>
         </div>

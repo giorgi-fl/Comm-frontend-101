@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.test_responsive {
+  width: 100%;
+  height: 200px;
+  background-color: aqua;
+}
+
+/* 
+destkop min 1366 or 1280 > 4k
+planshet min 768 - 1280
+mobile 340px - 768px
+
+*/
+
+/* this will work for planshets */
+@media (max-width: 1280px) {
+  .test_responsive {
+    background-color: blue;
+  }
+}
+
+/* this will work for mobile */
+
+@media (max-width: 768px) {
+  .test_responsive {
+    background-color: red;
+  }
+}
