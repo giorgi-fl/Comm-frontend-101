@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="bg-white">
+      <nav
+        class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+        aria-label="Global"
+      >
+        <div class="flex lg:flex-1">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">Your Company</span>
+            <img class="h-8 w-auto" src="./src/images/logo.svg" alt="" />
+          </a>
+        </div>
+        <div class="flex lg:hidden">
+          <button
+            type="button"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+              data-slot="icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-12">
+          <div class="relative">
+            <button
+              type="button"
+              class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900"
+              aria-expanded="false"
+            >
+              Home
+            </button>
+          </div>
+
+          <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
+            >Shope</a
+          >
+          <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
+            >About</a
+          >
+          <a href="#" class="text-sm font-semibold leading-6 text-gray-900"
+            >Contact</a
+          >
+        </div>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-5">
+          <img src="./src/images/icon.svg" alt="icon" />
+          <img src="./src/images/cart.svg" alt="icon" />
+        </div>
+      </nav>
+      <!-- Mobile menu, show/hide based on menu open state. -->
+      <div class="lg:hidden" role="dialog" aria-modal="true">
+        <!-- Background backdrop, show/hide based on slide-over state. -->
+        <div class="fixed inset-0 z-10"></div>
+        <div
+          class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+        >
+          <div class="flex items-center justify-between">
+            <a href="#" class="-m-1.5 p-1.5">
+              <span class="sr-only">Your Company</span>
+              <img
+                class="h-8 w-auto"
+                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
+                alt=""
+              />
+            </a>
+            <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Close menu</span>
+              <svg
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+              <div class="space-y-2 py-6">
+                <div class="-mx-3">
+                  <button
+                    type="button"
+                    class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    aria-controls="disclosure-1"
+                    aria-expanded="false"
+                  >
+                    Product
+                    <!--
+                        Expand/collapse icon, toggle classes based on menu open state.
+      
+                        Open: "rotate-180", Closed: ""
+                      -->
+                    <svg
+                      class="h-5 w-5 flex-none"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                      aria-hidden="true"
+                      data-slot="icon"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </button>
+                  <!-- 'Product' sub-menu, show/hide based on menu state. -->
+                </div>
+                <a
+                  href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Features</a
+                >
+                <a
+                  href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Marketplace</a
+                >
+                <a
+                  href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Company</a
+                >
+              </div>
+              <div class="py-6">
+                <a
+                  href="#"
+                  class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >Log in</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section
+      class="bg-[url('./src/images/bg.png')] h-[716px] flex flex-col justify-center items-end"
+    >
+      <div
+        class="flex flex-col justify-start p-[48px] w-[642px] bg-[#FFF3E3] mr-[58px] gap-5"
+      >
+        <p class="text-[16px] font-semibold">New Arrial</p>
+        <h1 class="text-[52px] text-[#B88E2F] font-extrabold">
+          Discover Our New Collection
+        </h1>
+        <h3 class="text-[24px] text-center mt-[30px]">Dining</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+          tellus, luctus nec ullamcorper mattis.
+        </p>
+        <button
+          class="bg-[#B88E2F] py-[25px] px-[72px] w-fit text-white text-bold"
+        >
+          Buy now
+        </button>
+      </div>
+    </section>
+    <section>
+      <div class="container mx-auto mt-[52px]">
+        <h2 class="text-[32px] text-bold text-center">Browse The Range</h2>
+        <p class="text-[20px] text-[#666666] text-semibold text-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </p>
+        <div class="flex justify-between mt-[52px]">
+          <div>
+            <img src="./src/images/img1.png" alt="" />
+            <h3 class="text-[24px] text-center mt-[30px]">Dining</h3>
+          </div>
+          <div>
+            <img src="./src/images/img1.png" alt="" />
+            <h3 class="text-[24px] text-center mt-[30px]">Dining</h3>
+          </div>
+          <div>
+            <img src="./src/images/img1.png" alt="" />
+            <h3 class="text-[24px] text-center mt-[30px]">Dining</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-[52px] container mx-auto">
+      <h2 class="text-[32px] text-bold text-center">Our Products</h2>
+      <div class="flex justify-between mt-6 flex-wrap">
+        <div class="relative group">
+          <img src="./src/images/Images.png" alt="" />
+          <div class="bg-[#F4F5F7] p-[16px]">
+            <h3 class="text-[24px]">Syltherine</h3>
+            <p class="text-[#898989]">Stylish cafe chair</p>
+            <h3 class="text-[24px]">Rp 2.500.000</h3>
+          </div>
+          <div
+            class="opacity-0 group-hover:opacity-100 duration-300 absolute inset-x-0 bottom-0 flex flex-col justify-center items-center text-xl bg-[#3a3a3a9b] text-black font-semibold h-[429px] p-[16px]"
+          >
+            <button class="w-fit bg-white py-[12px] px-[52px]">
+              <p class="text-[#B88E2F] text-[16px]">Add to cart</p>
+            </button>
+            <div class="flex justify-between gap-5 mt-5">
+              <p class="text-[#FFF]">Share</p>
+              <p class="text-[#FFF]">Compare</p>
+              <p class="text-[#FFF]">Like</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="./src/images/Images.png" alt="" />
+          <div class="bg-[#F4F5F7] p-[16px]">
+            <h3 class="text-[24px]">Syltherine</h3>
+            <p class="text-[#898989]">Stylish cafe chair</p>
+            <h3 class="text-[24px]">Rp 2.500.000</h3>
+          </div>
+        </div>
+        <div>
+          <img src="./src/images/Images.png" alt="" />
+          <div class="bg-[#F4F5F7] p-[16px]">
+            <h3 class="text-[24px]">Syltherine</h3>
+            <p class="text-[#898989]">Stylish cafe chair</p>
+            <h3 class="text-[24px]">Rp 2.500.000</h3>
+          </div>
+        </div>
+        <div>
+          <img src="./src/images/Images.png" alt="" />
+          <div class="bg-[#F4F5F7] p-[16px]">
+            <h3 class="text-[24px]">Syltherine</h3>
+            <p class="text-[#898989]">Stylish cafe chair</p>
+            <h3 class="text-[24px]">Rp 2.500.000</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer></footer>
+  </body>
+</html>
