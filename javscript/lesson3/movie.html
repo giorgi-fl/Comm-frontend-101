@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="movie-container"></div>
+
+    <div id="seat-map"></div>
+    <div class="container m-auto">
+      <div>
+        <p>selected seats : <span id="selected-seats">0</span></p>
+        <p>total price : <span id="total-price">0</span></p>
+      </div>
+      <button id="buy-button">Buy</button>
+    </div>
+    <script src="./movie.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      #seat-map {
+        margin-top: 200px;
+      }
+      .seat {
+        width: 50px;
+        height: 50px;
+        background-color: #ccc;
+        margin: 5px;
+        display: inline-block;
+        cursor: pointer;
+      }
+
+      .seat.selected {
+        background-color: #f00;
+      }
+      .seat.occupied {
+        background-color: purple;
+      }
+    </style>
+  </body>
+</html>
