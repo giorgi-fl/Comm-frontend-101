@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="flex justify-between">
+      <div class="w-1/5">
+        <h1>Enemy Team</h1>
+      </div>
+      <div
+        id="poke-container"
+        class="flex flex-wrap gap-5 justify-between container m-auto"
+      ></div>
+      <div class="w-1/5 flex flex-col items-center">
+        <h1>Your Team</h1>
+        <ul id="team-list"></ul>
+        <button
+          id="battle-button"
+          class="bg-violet-500 p-5 hover:bg-violet-600 tex-white rounded-md active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300"
+        >
+          Battle
+        </button>
+      </div>
+    </div>
+    <style>
+      #battle-button {
+        display: none;
+      }
+    </style>
+    <script src="./script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>
