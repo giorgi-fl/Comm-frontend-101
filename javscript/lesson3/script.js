@@ -46,7 +46,7 @@ function showMovies(movies) {
     const movieEl = document.createElement("div");
 
     movieEl.innerHTML = `
-    <div class="py-3 sm:max-w-xl sm:mx-auto">
+    <div class="py-3 sm:max-w-[30rem] sm:mx-auto mt-8">
     <div class="bg-white shadow-lg border-gray-100 max-h-80	 border sm:rounded-3xl p-8 flex space-x-8">
       <div class="h-48 overflow-visible w-1/2">
           <img class="rounded-3xl shadow-lg" src=${
