@@ -28,16 +28,27 @@ html {
   height: 65px;
   top: 50%;
   left: 50%;
+  transform-origin: bottom right;
 }
 .needle.hour {
   transform: translate(-50%, -100%) rotate(0deg);
 }
 .needle.minute {
-  transform: translate(-50%, -100%) rotate(40deg);
+  transform: translate(-50%, -100%) rotate(0deg);
   height: 100px;
 }
 .needle.second {
-  transform: translate(-50%, -100%) rotate(90deg);
+  transform: translate(-50%, -100%) rotate(0deg);
   background-color: red;
   height: 100px;
+}
+.center-point {
+  background-color: red;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
 }
