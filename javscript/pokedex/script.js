@@ -96,3 +96,15 @@ const addToTeam = (pokemon) => {
   }
   console.log(team);
 };
+
+function battleClicked() {
+  let ids = [];
+
+  team.forEach((pokemon) => {
+    console.log(pokemon);
+    ids.push(pokemon.id);
+  });
+  let idsStr = ids.join(",");
+  console.log(idsStr);
+  window.location.href = `battle.html?team=${idsStr}`;
+}
