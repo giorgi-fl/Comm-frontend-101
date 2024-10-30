@@ -8,7 +8,7 @@ function setTime() {
   const time = new Date();
   const month = time.getMonth();
   const day = time.getDay();
-  const hours = time.getHours();
+  const hours = time.getHours() % 12; 
   const minutes = time.getMinutes();
   const seconds = time.getSeconds();
 
@@ -18,22 +18,26 @@ function setTime() {
     12,
     0,
     360
-  )})deg`;
+  )}deg)`;
   minuteEl.style.transform = `translate(-50%, -100%) rotate(${scale(
     minutes,
     0,
     60,
     0,
     360
-  )})deg`;
+  )}deg)`;
   secondEl.style.transform = `translate(-50%, -100%) rotate(${scale(
     seconds,
     0,
     60,
     0,
     360
-  )})deg`;
+  )}deg)`;
 }
+
+timeEl.innerHTML = `${}`
+
+
 
 setTime();
 
